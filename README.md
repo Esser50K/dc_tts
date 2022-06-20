@@ -61,8 +61,9 @@ Download [this](https://www.dropbox.com/s/1oyipstjxh2n5wo/LJ_logdir.tar?dl=0).
   * The paper didn't mention normalization, but without normalization I couldn't get it to work. So I added layer normalization.
   * The paper fixed the learning rate to 0.001, but it didn't work for me. So I decayed it.
   * I tried to train Text2Mel and SSRN simultaneously, but it didn't work. I guess separating those two networks mitigates the burden of training.
-  * The authors claimed that the model can be trained within a day, but unfortunately the luck was not mine. However obviously this is much fater than Tacotron as it uses only convolution layers.
-  * Thanks to the guided attention, the attention plot looks monotonic almost from the beginning. I guess this seems to hold the aligment tight so it won't lose track.
+  * The authors claimed that the model can be trained within a day, but unfortunately the luck was not mine. However obviously this is much faster than Tacotron as it uses only convolution layers.
+  * Thanks to the guided attention, the attention plot looks monotonic almost from the beginning. I guess this seems to hold the alignment tight so it won't lose track.
   * The paper didn't mention dropouts. I applied them as I believe it helps for regularization.
   * Check also other TTS models such as [Tacotron](https://github.com/kyubyong/tacotron) and [Deep Voice 3](https://github.com/kyubyong/deepvoice3).
   
+
